@@ -9,7 +9,7 @@ const cheerio = require('cheerio');
 const USER = core.getInput("user");
 const REPO = core.getInput("repo");
 const TAG = core.getInput("tag");
-const INDEX = core.getInput("index");
+const INDEX = core.getInput("index") || 0;
 
 
 const getHTML = async () => {

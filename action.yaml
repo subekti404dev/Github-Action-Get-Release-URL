@@ -20,7 +20,7 @@ inputs:
   
 outputs:
   result:
-    description: 'Parse result'
+    description: 'Release url'
 runs:
   using: 'node12'
   main: 'index.js'
