@@ -1,0 +1,26 @@
+name: 'Github Release Assets URL'
+description: 'A Github action to get github release assets url'
+inputs:
+  user: 
+    description: 'Github Username'
+    required: true
+    default: null
+  repo:
+    description: 'Github repo name'
+    required: true
+    default: null
+  tag:
+    description: 'Release tag'
+    required: true
+    default: null
+  index:
+    description: 'File index'
+    required: true
+    default: 0
+  
+outputs:
+  result:
+    description: 'Parse result'
+runs:
+  using: 'node12'
+  main: 'index.js'
